@@ -56,12 +56,7 @@ const ScalableImage = props => {
             const sourceToUse = source.uri
                 ? source.uri
                 : source;
-
-            Image.getSize(
-                sourceToUse,
-                (width, height) => adjustSize(width, height, props),
-                console.err
-            );
+           
         }
         else {
             const sourceToUse = resolveAssetSource(source);
